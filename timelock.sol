@@ -14,7 +14,7 @@ constructor (){
     owner = msg.sender;
     StartTime = block.timestamp;
 }
- function withdraw() public onlyby(owner) {
+ function reverse() public onlyby(owner) {
         require(block.timestamp >= StartTime + LockTime, "Lock period has not ended yet"); // blocktimestamp which is now should be greater than locktime to get your funds
         
        payable(owner).transfer(address(this).balance);
