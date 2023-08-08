@@ -7,8 +7,8 @@ contract Token is ERC20{
     string memory name,
     string memory symbol,
     uint256 intialsupply
-  ) ERC20(name, symbol) { // constructor expects these variables when the contract is deployed.
-    _mint(msg.sender, intialsupply);// function present in the erc20 contract
+  ) ERC20(true_stories, TRU) { // constructor expects these variables when the contract is deployed.
+    _mint(msg.sender, 1000 * 10^18);// function present in the erc20 contract
   }
 }
 
